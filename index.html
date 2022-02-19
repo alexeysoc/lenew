@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		LeNew
+	</title>
+	<meta name="description" content="LeNew">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+		<header class="header">
+			<div class="main__container">
+				<!-- <a href="" class="header__logo"></a> -->
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a  href="index.html" class="menu__link">Главная</a></li> <!--data-goto=".header" -->
+							<li><a data-goto=".news" href="#" class="menu__link">Новости</a></li>
+							<li><a data-goto=".download" href="#" class="menu__link">Скачать</a></li>
+						</ul>
+						<a class="submit" href="login.html" >Войти</a>
+					</nav>
+				</div>
+				
+			</div>
+		</header>
+<main class="main">
+    <div class="main__container">
+        <div class="main__wrapper">
+            <h1 class="main__title">
+                <p>Бесплатная практика <br> произношения слов и <br> фраз на английском <br> языке.</p>
+                <p>"Мы понимаем, о чем Вы <br> говорите!" - LeNew</p>
+            </h1>
+            <img class="main__bg1 main__bg" src="images/dist/main_bg.jpg" alt="">
+            <img class="main__bg2 main__bg" src="images/dist/main_bg2.jpg" alt="">
+            <img class="main__bg3 " src="images/dist/main_bg3.png" alt="">
+        </div>
+    </div>
+</main>
+<section class="benefits">
+    <div class="main__container">
+        <div class="benefits__wrapper">
+            <ul class="benefits__items">
+                <li class="benefits__item">
+                    <img class="benefits_img" src="images/dist/benefits_1.png" alt="benefits_1">
+                    <h3 class="benefits__item-title">
+                        Смотрите
+                    </h3>
+                    <p class="benefits__item-descr">
+                        Приложение наполнено красочными иллюстрациями к каждому слову,
+                        что поможет Вам сформировать образ в голове
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits_img" src="images/dist/benefits_2.png" alt="benefits_2">
+                    <h3 class="benefits__item-title">
+                        Слушайте
+                    </h3>
+                    <p class="benefits__item-descr">
+                        В процесс запоминания включается
+                        не только зрение (при прочтении текста), но и слух.
+                        Произнесите новое слово!
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <img class="benefits_img" src="images/dist/benefits_3.png" alt="benefits_3">
+                    <h3 class="benefits__item-title">
+                        Практикуйте
+                    </h3>
+                    <p class="benefits__item-descr">
+                        В проверке правильности
+                        произношения участвует AI-помощник.
+                        Просто скажите слово или фразу
+                        и он мгновенно оценит результат
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="download">
+    <div class="main__container">
+        <div class="download__wrapper">
+            <img class="download__img" src="images/dist/download.png" alt="download__img">
+            <a href="download.html" class="download__btn">ПОПРОБОВАТЬ СЕЙЧАС</a>
+        </div>
+    </div>
+</section>
+<section class="description">
+    <div class="main__container">
+        <img class="description__bg" src="images/dist/description_bg.jpg" alt="">
+        <div class="description__header">
+            <div class="description__title">
+                Мы сделали приложение интуитивно <br> понятным,
+                а процесс изучения эффективным
+            </div>
+            <p class="description__text">
+                Процесс изучения языка непосредственно связан с визуальной составляющей, что поможет быстрее
+                сформировать ассоциации к новым словам и фразам.
+            </p>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="slider__img" src="images/dist/slide_1.jpg" alt="slide_1">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="images/dist/slide_2.jpg" alt="slide_2">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="images/dist/slide_3.jpg" alt="slide_3">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper__button-wrapper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> 
+        </div>
+    </div>
+</section>
+<section class="news">
+    <div class="main__container">
+        <div class="news_insta">
+            <p class="insta__text insta__text-left">Мы в</p>
+            <a href="#" class="insta__link">
+                <img class="insta__icon" src="images/dist/insta.svg"></img>
+            </a>
+            <p class="insta__text insta__text-right">Instagram</p>
+        </div>
+        <div class="news__wrapper">
+            <h2 class="news__title">Новости</h2>
+             <div class="news__slider" data-mobile="false"><!--swiper-container  -->
+                <div class="news__items"><!--swiper-wrapper  -->
+                    <div class="news__item">
+                        <img class="news__img" src="images/dist/news_img.jpg" alt="news__img">
+                        <h4 class="news__item-title">Новость_Последняя</h4>
+                        <p class="news__item-text">Текст статьи</p>
+                    </div>
+                    <div class="news__item">
+                        <img class="news__img" src="images/dist/news_img.jpg" alt="news__img">
+                        <h4 class="news__item-title">Новость_Пред_последняя</h4>
+                        <p class="news__item-text">Текст статьи</p>
+                    </div>
+                    <div class="news__item">
+                        <img class="news__img" src="images/dist/news_img.jpg" alt="news__img">
+                        <h4 class="news__item-title">Новость_Пред_пред_последняя</h4>
+                        <p class="news__item-text">Текст статьи</p>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="news-swiper-pagination swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="news-swiper__button-wrapper swiper__button-wrapper">
+                    <div class="news-swiper-button-prev swiper-button-prev"></div>
+                    <div class="news-swiper-button-prev swiper-button-next"></div>
+                </div>
+            </div>
+            <img class="news__bg" src="images/dist/news_bg.jpg" alt="news__bg">
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="main__container">
+		<!-- <a href="" class="footer__logo"></a> -->
+		<div class="footer__menu">
+			<nav class="footer__menu__body">
+				<a class="footer__logo" href="index.html" >LeNew</a>
+				<ul class="footer__menu__list">
+					<li><a data-goto=".header" href="index.html" class="footer__menu__link menu__link">Главная</a></li>
+					<li><a data-goto=".news" href="#" class="footer__menu__link menu__link">Новости</a></li>
+					<li><a class="footer__menu__link menu__link" href="contact.html" >Контакты</a></li>
+					<li><a class="footer__download menu__link" data-goto=".download"  href="download.html" >Скачать</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+		
+	</div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

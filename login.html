@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>
+        LeNew login
+    </title>
+    <meta name="description" content="LeNew">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <section class="login">
+        <div class="main__container">
+            <div class="login__wrapper">
+                <div class="img__wrapper">
+                    <img class="login__img" src="images/dist/login_img.png" alt="картинка">
+                </div>
+                <div class="form__wrapper wrapper__login  _active">
+                    <div class="login__title">Вход в систему <span>LeNew</span></div>
+                    <form class="login__form" action="">
+                        <input class="login__input" type="email" name="login__email" id="login__email"
+                            placeholder="Email">
+                        <input class="login__input" type="password" name="login__password" id="login__password"
+                            placeholder="Пароль">
+                        <input class="login__submit" type="submit" value="ВОЙТИ">
+                        <a class="forgot_password login__form-link" href="#">Забыли пароль?</a>
+                        <a class="registred login__form-link" href="#">Зарегистрироваться --></a>
+                    </form>
+                </div>
+                <div class="form__wrapper form__wrapper-forgot">
+                    <div class="login__title forgot__title">Восстановление доступа в систему <span>LeNew</span>
+                    </div>
+                    <form class="forgot__form login__form" action="">
+                        <input class="login__input" type="email" name="forgot__email" id="forgot__email"
+                            placeholder="Email">
+                        <input class="forgot__submit login__submit" type="submit" value="ВОССТАНОВИТЬ">
+                        <a class="forgot__login login__form-link" href="#">Войти --></a>
+                    </form>
+                </div>
+                <div class="form__wrapper form__wrapper-registred">
+                    <div class="login__title registred__title">Регистрация в системе <span>LeNew</span></div>
+                    <form class="login__form registred__form" action="">
+                        <input class="login__input registred__input" type="text" name="registred__name"
+                            id="registred__name" placeholder="Имя">
+                        <input class="login__input registred__input" type="email" name="registred__email"
+                            id="registred__email" placeholder="Email">
+                        <input class="login__input  registred__input" type="password" name="registred__password"
+                            id="registred__password" placeholder="Пароль">
+                        <input class="login__input  registred__input" type="password" name="confirm__password"
+                            id="confirm__password" placeholder="Повторите пароль">
+                        <div class="registred__check-wrapper">
+                            <input class="registred__check login__form-link" type="checkbox" name="registred__check"
+                                id="registred__check">
+                            <label class="registred__form-link login__form-link" for="registred__check">Я согласен с
+                                правилами</label>
+                        </div>
+                        <a class="registred__form-link login__form-link" href="#">Пользовательское соглашение</a>
+                        <a class="registred__form-link login__form-link" href="#">Политика конфиденциальности</a>
+                        <input class="registred__submit login__submit" type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+                        <a class="registred__login login__form-link" href="#">Войти --></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
