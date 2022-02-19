@@ -1,0 +1,76 @@
+// USER VARIABLES SECTION
+
+$accent: #28A814 // Accent Color
+$textcolor: #0A123C // Text Color
+$textcolor2: #4A4C56 // Text Color2
+$textcolor3: #58595F// Text Color3
+$textcolor4: #080E2C// Text Color4
+$white: #ffffff//white
+$black: #000000 //black
+$blue: #3D81F9//blue
+$cornflower_blue: #313B6F //blue
+$white_lilac: #F9F8FD//White Lilac
+$background: #D3E3FF//background
+$silver_chalice: #A4A4A4 //Silver Chalice
+$alto: #DEDEDE //Alto
+$mercury: #E6E6E6 //Mercury
+$east_bay: #44457F//East Bay
+$silver: #c4c4c4//Silver
+$cornflower_blue: #7c75ff//Cornflower Blue
+$blue_ribbon: #3941ff//Blue Ribbon
+$fog: #D8D8FE//Fog
+
+$fontsize: 18px // Body Font Size
+$lineheight: 1.65 // Document Line Height
+$userfont: OpenSans, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+//@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('open-sans', normal, 300, '../fonts/OpenSans-Light.woff2')
+@include font('open-sans', normal, 400, '../fonts/OpenSans-Regular.woff2')
+@include font('open-sans', normal, 600, '../fonts/OpenSans-SemiBold.woff2')
+@include font('open-sans', normal, 700, '../fonts/OpenSans-Bold.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden

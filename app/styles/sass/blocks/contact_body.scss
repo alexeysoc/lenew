@@ -1,0 +1,136 @@
+.contacts {
+    padding-top: 130px;
+    // background-color: red;
+}
+
+.contacts__title {
+    font-size: 30px;
+    line-height: 1.37;
+    text-align: center;
+    color: $textcolor;
+    margin: -12px auto 25px auto;
+    @media (max-width: 700px) {
+        font-size: 40px;
+        margin-top: -32px;
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__wrapper {
+    position: relative;
+    padding: 71px 0 155px 0;
+    z-index: 5;
+    @media (max-width: 700px){
+        padding: 46px 30px 145px 30px;
+    }
+}
+
+.contacts__descr {
+    position: relative;
+    z-index: 5;
+    font-size: 30px;
+    line-height: 1.52;
+    text-align: center;
+    color: $textcolor;
+    margin: 0 auto 60px auto;
+    padding: 0 15px;
+    max-width: 680px;
+    @media (max-width: 700px){
+        font-size: 15px;
+        margin: 0 auto 52px auto;
+    }
+}
+
+.contacts__form {
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 685px;
+}
+
+.contacts__input-wrapper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    @media (max-width: 700px) {
+        display: block;
+        margin-bottom: 29px;
+    }
+}
+
+#contact__name {
+    margin-right: 15px;
+}
+
+.contacts__input {
+    font-size: 24px;
+    line-height: 1.375;
+    padding: 10px 0 8px 20px;
+    color: $textcolor2;
+    @media (max-width: 700px){
+        font-size: 30px;
+        padding: 20px 0 19px 20px;
+    }
+}
+// .contacts__input:first-child{
+//     margin-bottom: 30px;
+// }
+.contacts__form input,
+.contacts__form textarea {
+    //border: 1px solid red;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+}
+
+.contacts__form input::placeholder,
+.contacts__form textarea::placeholder {
+    font-size: 24px;
+    line-height: 1.375;
+    color: $textcolor2;
+    @media (max-width: 700px){
+        font-size: 30px;
+    }
+}
+
+.contacts__form textarea {
+    padding: 4px 0 8px 19px;
+    height: 148px;
+    margin-bottom: 38px;
+    font-size: 24px;
+    @media (max-width: 700px){
+        font-size: 30px;
+        padding: 0px 0 8px 24px;
+        height: 205px;
+        margin-bottom: 48px;
+    }
+}
+
+.contacts__submit {
+    max-width: 318px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 1.375;
+    color: $textcolor;
+    padding: 2px 0 2px 0px;
+    cursor: pointer;
+    @media (max-width: 700px){
+        font-size: 40px;
+        padding: 14px 0 11px 0;
+    }
+}
+
+.contacts__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+.footer__download{
+    margin-right: 70px !important;
+    @media (max-width: 1280px){
+        margin-right: 10px !important;
+    }
+}

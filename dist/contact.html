@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		LeNew contact
+	</title>
+	<meta name="description" content="LeNew">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+		<header class="header">
+			<div class="main__container">
+				<!-- <a href="" class="header__logo"></a> -->
+				<div class="header__menu menu">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a  href="index.html" class="menu__link">Главная</a></li> <!--data-goto=".header" -->
+							<li><a data-goto=".news" href="#" class="menu__link">Новости</a></li>
+							<li><a data-goto=".download" href="#" class="menu__link">Скачать</a></li>
+						</ul>
+						<a class="submit" href="login.html" >Войти</a>
+					</nav>
+				</div>
+				
+			</div>
+		</header>
+<section class="contacts">
+    <div class="main__container">
+        <div class="contacts__title">Контакты</div>
+        <div class="contacts__wrapper">
+            <img class="contacts__bg" src="images/dist/contact_bg.jpg" alt="фон секции">
+            <div class="contacts__descr">
+                Приложение “LeNew” находится в разработке.
+                Мы надеемся получить ваши комментарии,
+                чтобы помочь нам его улучшить.
+            </div>
+            <form class="contacts__form" action="">
+                <div class="contacts__input-wrapper">
+                    <input class="contacts__input" type="text" name="contact__name" id="contact__name"
+                        placeholder="Ваше имя">
+                    <input class="contacts__input" type="email" name="contact__email" id="contact__emai"
+                        placeholder="E-mail">
+                </div>
+                <textarea name="contact__text" id="contact__text" cols="30" rows="10"
+                    placeholder="Сообщение"></textarea>
+                <input class="contacts__submit" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+	<div class="main__container">
+		<!-- <a href="" class="footer__logo"></a> -->
+		<div class="footer__menu">
+			<nav class="footer__menu__body">
+				<a class="footer__logo" href="index.html" >LeNew</a>
+				<ul class="footer__menu__list">
+					<li><a data-goto=".header" href="index.html" class="footer__menu__link menu__link">Главная</a></li>
+					<li><a data-goto=".news" href="#" class="footer__menu__link menu__link">Новости</a></li>
+					<li><a class="footer__menu__link menu__link" href="contact.html" >Контакты</a></li>
+					<li><a class="footer__download menu__link" data-goto=".download"  href="download.html" >Скачать</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+		
+	</div>
+</footer>
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+//Адаптивное свойство
+$maxWidth: 1920;
+$maxWidthContainer: 1920;
+
+@mixin adaptiv-value ($property, $startSize, $minSize, $type) {
+	$addSize: $startSize - $minSize;
+
+	@if $type==1 {
+		//Только если меньше контейнера
+		#{$property}: $startSize + px;
+
+		@media(max-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 460px) / #{$maxWidthContainer - 460}));
+		}
+	}	@else if $type==2 {
+		//Только если больше контейнера
+		#{$property}: $startSize + px;
+
+		@media(min-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 460px) / #{$maxWidth - 460}));
+		}
+
+	} @else {
+		//Всегда
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 460px) / #{$maxWidth - 460}));
+}
+}
